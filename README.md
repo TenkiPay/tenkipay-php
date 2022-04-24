@@ -3,11 +3,12 @@ PHP Laravel code for the tenkipay webhook
 
 # Instructions
 Exclude your webhook URL for sending CRS token, for Tenkipay to post
-open /app/Http/Middleware/VerifyCsrfToken.php
+open <code>/app/Http/Middleware/VerifyCsrfToken.php</code>
 add your webhook url to the except array 
 
 configure your webhook url on tenkipay 
-add your webhook secret to env and namem it TENKIPAY_SECRET
+add your webhook secret to .env
+TENKIPAY_SECRET="{your webhook secret}"
 
 
 ```public function tenkiPay(Request $request){</code>
