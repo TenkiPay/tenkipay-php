@@ -1,5 +1,5 @@
 # tenkipay-php
-PHP Laravel code for the tenkipay webhook
+PHP Laravel tenkipay webhook integration
 
 # Instructions
 Exclude your webhook URL for sending CRS token, for Tenkipay to post
