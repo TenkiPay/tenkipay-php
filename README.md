@@ -9,7 +9,7 @@ open <code>/app/Http/Middleware/VerifyCsrfToken.php</code>
 add your webhook url to the except array 
 <code>
    protected $except = [
-        'api/webhook',
+        'api/webhook'
     ];
  </code>
 
