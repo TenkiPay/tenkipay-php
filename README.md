@@ -19,7 +19,7 @@ add your webhook secret to .env
 TENKIPAY_SECRET="{your webhook secret}"
 Open the <code>app/Https/Controllers/Webhook.php</code> and add the tenkipay method in the Webhook class
 
-```public function tenkiPay(Request $request){</code>
+```public function tenkiPay(Request $request){
       $input = $request->input();
       if($input['secret'] !== env('TENKIPAY_SECRET')){
          abort(403, 'Access denied');
