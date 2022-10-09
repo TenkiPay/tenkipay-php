@@ -17,7 +17,7 @@ add your webhook url to the except array
 configure your webhook url on tenkipay 
 add your webhook secret to .env
 TENKIPAY_SECRET="{your webhook secret}"
-Open the <code>app/Https/Controllers/Webhook.php</code> and add the tenkipay method in the Webhook class
+Open the <code>app/Http/Controllers/Webhook.php</code> and add the tenkipay method in the Webhook class
 
 ```
    public function tenkiPay(Request $request){
