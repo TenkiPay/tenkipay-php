@@ -27,8 +27,7 @@ Open <code>app/Http/Controllers/Webhook.php</code> and add the tenkipay method i
          }
          $description = $input['description'];
          $customername = $input['customer_name'];
-         $customeremail = $input['customer_email'] ?? "";
-         $customerphone = $input['customerphone'] ?? "";
+         $customer_username = $input['customer_username'] ?? "";
          $amount = $input['amount'];
          // YOUR BUSINESS LOGIC HERE
          return response()->setStatusCode()->json;
