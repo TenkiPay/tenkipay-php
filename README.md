@@ -30,7 +30,7 @@ Open <code>app/Http/Controllers/Webhook.php</code> and add the tenkipay method i
          $customer_username = $input['customer_username'] ?? "";
          $amount = $input['amount'];
          // YOUR BUSINESS LOGIC HERE
-         return response()->setStatusCode()->json;
+         return response()->json(['status'=> true],200);
     }
  ```
  
