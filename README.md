@@ -38,4 +38,4 @@ Open <code>app/Http/Controllers/Webhook.php</code> and add the tenkipay method i
  
  ```
      use App\Http\Controllers\Webhook;
-     Route::post('api/webhook',[Webhook::class, 'tenkiPay']);
+     Route::post('webhook',[Webhook::class, 'tenkiPay']);
